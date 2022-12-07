@@ -4,11 +4,11 @@ const validator = {
 
 export default validator;
 
-//crear un prompt variable para la entrada del número de la tarjeta
-//let cardNumber ="4083952015263";
+// //crear un prompt variable para la entrada del número de la tarjeta
+// //let cardNumber ="4083952015263";
 let cardNumber = (prompt("Ingresar número de tarjeta"));
 
-//crear función "isValid" son el parámetro "cardNumber"
+// //crear función "isValid" son el parámetro "cardNumber"
 function isValid (cardNumber){
 
   //convertir el número en array para poder acceder a su posición a través del método "Array.from"
@@ -26,16 +26,16 @@ for (let i = 0; i < reversedCard.length; i++) {
     let noMultiply = (reversedCard[i]);
     result += noMultiply;
   } else {
-    //console.log(reversedCard[i] * 2);
     let multiply = (reversedCard[i] * 2);
     if (multiply >= 10) {
-    result += multiply - 9;
+      result += multiply - 9;
     } else {
-    result += multiply;
+      result += multiply;
     }
-    }
+  }
 }
-result = result % 10? false:true
+//si no se cumple que el resultado es multiplo de 10 es falso, sino es verdadero
+result = result % 10 ? false : true
 return result;
 }
-console.log(isValid(cardNumber));
+alert(isValid(cardNumber));

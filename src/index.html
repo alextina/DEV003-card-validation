@@ -5,10 +5,29 @@
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="">
     <header></header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="validationClass">
+        <!-- <form  id="form" method="post" action="#"> -->
+        <form  id="form">
+        <img class="logoClass" src="logo-christine.png">
+        <h1>Antes de realizar tu compra, 
+          <br>
+           válida los números de tu tarjeta.</h1>
+        <label for="cardNumber" class="labelClass">Ingresa los números en el siguiente recuadro <br> y haz clic en "Validar".</label>
+        <br>
+        <input id="cardNumber" type="text" name="cardNumber" required="" pattern="[0-9]+" minlength="9" maxlength="16">
+        <br>
+        <button id="validationButton" class="buttonClass">Validar</button>
+        </form>
+        <p id="log"></p>
+        <img class="iconClass" src="iconos.png">
+      </div>
+    </main>
+    <footer class="footerClass">
+      <p> Está página ha sido elaborada por Alejandra Castillo <br> para el proyecto "Card Validation" miembro del cohort DEV003 de Laboratoria.</p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
