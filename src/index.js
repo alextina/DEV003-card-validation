@@ -13,18 +13,23 @@ buttonValidation.addEventListener("click",(e) => {
     const inputNumber = document.getElementById("credictCardNumber").value;
     console.log(inputNumber);
     const answer = validator.isValid(inputNumber);
-
     //crear un condicional para mostrarle una respuesta al usuario
     if (answer){
-    alert("Tu tarjeta es válida.")
+    let validCard = (`La tarjeta ${inputNumber} es válida.`);
+    const answerHtml = document.getElementById("credictCardResult");
+    answerHtml.innerHTML = validCard;
+    //alert("Tu tarjeta es válida.")
     }else{
-    alert("Tu tarjeta es inválida.")
+    let invalidCard = (`La tarjeta ${inputNumber} es inválida.`);
+    const answerHtml = document.getElementById("credictCardResult");
+    answerHtml.innerHTML = invalidCard;
+    //alert("Tu tarjeta es inválida.")
     }
 
 //encontrar elemento p y agregarle texto
+// const answerHtml = document.getElementById("credictCardResult");
+// answerHtml.innerHTML = answer;
 
 });
 
 console.log(validator);
-
-//no puedo pedirle un atributo a un string inputNumber es un string. Los unicos que tinen propiedad o atributos
