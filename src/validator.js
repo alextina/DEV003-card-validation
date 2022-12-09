@@ -1,51 +1,46 @@
 const validator = {
 
-isValid:(credictCardNumber) => {
-let newCardNumber = credictCardNumber.split("");
-let reversedCard = newCardNumber.reverse().map(x=>parseInt(x));
-let result = 0;
-for (let i = 0; i < reversedCard.length; i++) {
-  if (i === 0 || i % 2 === 0) {
-    let noMultiply = (reversedCard[i]);
-    result += noMultiply;
-  } else {
-    let multiply = (reversedCard[i] * 2);
-    if (multiply >= 10) {
-      result += multiply - 9;
-    } else {
-      result += multiply;
+  isValid: (credictCardNumber) => {
+    const newCardNumber = credictCardNumber.split("");
+    const reversedCard = newCardNumber.reverse().map(x => parseInt(x));
+    let result = 0;
+    for (let i = 0; i < reversedCard.length; i++) {
+      if (i === 0 || i % 2 === 0) {
+        const noMultiply = (reversedCard[i]);
+        result += noMultiply;
+      } else {
+        const multiply = (reversedCard[i] * 2);
+        if (multiply >= 10) {
+          result += multiply - 9;
+        } else {
+          result += multiply;
+        }
+      }
     }
-  }
-}
-result = result % 10 ? false : true
-return result;
-},
+    result = result % 10 ? false : true
+    return result;
+  },
 
-maskify:(credictCardNumber)=>{
-  let newCardNumber = credictCardNumber.split("");
-  let size = newCardNumber.length;
-  let lastPosition = size - 1;
-  //creando una variable que almacenará los datos
-  result = "";
-  //creando un loop para iterar un if else.
-  for (let i = 0; i <= lastPosition; i++) {
-    //si (i) es el total de posiciones - 4, ponerle la mascara #
-    if (i < size - 4) {
-      let mask = ("#")
-      //console.log(mask);
-      result += mask;
-    } else {
-      let unMask = (newCardNumber[i]);
-      //console.log(unMask);
-      result += unMask
+  maskify: (credictCardNumber) => {
+    const newCardNumber = credictCardNumber.split("");
+    const size = newCardNumber.length;
+    const lastPosition = size - 1;
+    let resultMask = "";
+    for (let i = 0; i <= lastPosition; i++) {
+      if (i < size - 4) {
+        const mask = ("#");
+        resultMask += mask;
+      } else {
+        const unMask = (newCardNumber[i]);
+        resultMask += unMask;
+      }
     }
+    return resultMask;
   }
-  return result;
-}
 
 };
 export default validator;
-
+//------------------------------------------------------------------------------------------------
 // //crear un prompt variable para la entrada del número de la tarjeta
 // //let credictCardNumber ="4083952015263";
 //let credictCardNumber = (prompt("Ingresar número de tarjeta"));
@@ -81,4 +76,28 @@ export default validator;
 // return result;
 // }
 // alert(isValid(cardNumber));
+//------------------------------------------------------------------------------------------------
+// let credictCardNumber = (prompt("Ingresar número de tarjeta"));
 
+// function maskify(credictCardNumber) {
+//   let newCardNumber = credictCardNumber.split("");
+//   let size = newCardNumber.length;
+//   let lastPosition = size - 1;
+//   //creando una variable que almacenará los datos
+//   result = "";
+//   //creando un loop para iterar un if else.
+//   for (let i = 0; i <= lastPosition; i++) {
+//     //si (i) es el total de posiciones - 4, ponerle la mascara #
+//     if (i < size - 4) {
+//       let mask = ("#");
+//       //console.log(mask);
+//       result += mask;
+//     } else {
+//       let unMask = (newCardNumber[i]);
+//       //console.log(unMask);
+//       result += unMask;
+//     }
+//   }
+//   return result;
+// }
+// alert(maskify(credictCardNumber));
