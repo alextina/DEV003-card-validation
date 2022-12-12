@@ -7,15 +7,22 @@ import validator from './validator.js';
 //     alert("Le di clic al botón.");
 // }); 
 
-//Esto SI funciona
+//Esto SI funciona pero con el arrow function no funciona lo que puse en input, debo convertirlo en una función.
 //variable que utilizaremos para ejecutar el evento (id del botón)
 const buttonValidation = document.getElementById("validationButton");
 //variablequequeremosqueescuche.addEventListener("evento",acción que escucha);
 buttonValidation.addEventListener("click", (e) => {
+  
   e.preventDefault(); //cancela el evento y nos permite llamarlo cuando sea necesario
   //variable que nos permite acceder a la info brindada por el usuario (id del imput)
   const inputNumber = document.getElementById("credictCardNumber").value;
   //variable en la que aplicamos la función isValid (validator.isValid(inputNumber)<< llamamos a la función desde validator.js)
+  //si la variable inputNumber esta vacia, entonces no dejar que el boton funcione // return temrina la ejecucion de la funcion
+  if (inputNumber.length === 0){
+    alert(`Debes ingresar el número de la tarjeta.`)
+    return 
+  } // si la variable no es un numero, entonces terminar la función
+  //if (inputNumber ===)
   const answer = validator.isValid(inputNumber);
   //crear un condicional para mostrarle una respuesta al usuario
   if (answer) { // >>> si answer === true entonces

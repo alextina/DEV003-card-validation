@@ -9,14 +9,14 @@
     <header></header>
     <main>
       <div class="validationClass">
-        <form>
+        <form method="post" action="/form" autocomplete="off">
         <img class="logoClass" src="logo-christine.png">
         <hr>
         <br>
         <h1>Antes de realizar tu compra, <br> válida los números de tu tarjeta.</h1>
         <label for="cardNumber" class="labelClass">Ingresa los números en el siguiente recuadro <br> y haz clic en "Validar".</label>
         <br>
-        <input id="credictCardNumber" type="text" name="cardNumber" required="" pattern="[0-9]+" minlength="9" maxlength="16">
+        <input id="credictCardNumber" type="text" name="cardNumber" required="required" pattern="[0-9]+" minlength="9" maxlength="16">
         <br>
         <button id="validationButton" class="buttonClass">Validar</button>
         <br>
