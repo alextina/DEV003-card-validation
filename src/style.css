@@ -3,12 +3,19 @@ html, body{
     background-image: url(background.png);
     background-size:cover;
 }
+.validationClass{
+    width: 50%;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
 .logoClass{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 250px;
-    padding: 50px  20px;
+    padding: 25px  25px;
 }
 .iconClass{
     display: block;
@@ -48,22 +55,16 @@ input{
     font-size: 22px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     font-weight: 100;
-    margin: 2%;
+    margin-block: 15px;
 }
 hr{
-    /* border: 1px dotted rgb(95, 95, 95); */
     border: 1px solid rgba(116, 3, 122, 0.155);
     width: 40%;
+    margin-top: 5px;
 }
-.validationClass{
-    width: 50%;
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-}
-.buttonClass{
+button{
     background-color: rgb(130, 55, 205);
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius:8px;
     border: 0px;
     padding:12px 28px;
@@ -73,8 +74,13 @@ hr{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
 }
-.footerClass{
+button:hover{
+    background-color: rgb(160, 70, 225);
+    color: rgb(255, 255, 255);
+}
+footer{
     width: 43%;
     margin-left: auto;
     margin-right: auto;
+    padding: 40px 20px;
 }
