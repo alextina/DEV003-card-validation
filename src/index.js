@@ -17,12 +17,13 @@ buttonValidation.addEventListener("click", (e) => {
   //variable que nos permite acceder a la info brindada por el usuario (id del imput)
   const inputNumber = document.getElementById("credictCardNumber").value;
   //variable en la que aplicamos la función isValid (validator.isValid(inputNumber)<< llamamos a la función desde validator.js)
-  //si la variable inputNumber esta vacia, entonces no dejar que el boton funcione // return temrina la ejecucion de la funcion
-  if (inputNumber.length === 0){
-    alert(`Debes ingresar el número de la tarjeta.`)
+  //si la variable inputNumber esta vacia, es menor a 13 o no es un npumero, entonces mandar una alerta
+  // return termina la funcion, de lo contrario contínua el flujo
+  if (inputNumber.length < 13) {
+    alert(`Por favor, ingresa un número de tarjeta.`);
     return 
-  } // si la variable no es un numero, entonces terminar la función
-  //if (inputNumber ===)
+  } 
+  // si la variable no es un numero, entonces terminar la función
   const answer = validator.isValid(inputNumber);
   //crear un condicional para mostrarle una respuesta al usuario
   if (answer) { // >>> si answer === true entonces
