@@ -1,5 +1,37 @@
 # Tarjeta de crédito válida
+# CARD VALIDATION
+Enlace de distribución (link de github pages)
 
+## Introducción:
+En este proyecto se ha construido una aplicación web que permite al usuario validar el número de una tarjeta de crédito, así como ocultar todos los dígitos de una tarjeta menos los últimos cuatro.
+
+Para la principal función, la de validación de la tarjeta, se aplicó el algoritmo de Luhn, también conocido como algoritmo de módulo 10. 
+
+### Aplicación:
+Ambas funcionales se han implementado a la web de "Christine Bisutería", tienda de joyas y accesorios elaborados a mano, lo que permitirá al usuario válida si su tarjeta es válida antes de realizar la compra, además sus datos estarán seguros ya que se los números no se muestran.
+
+Imágenes de su funcionamiento:
+![Imágenes de su funcionamiento 1] (https://postimg.cc/bSHXy2fg)
+
+![Imágenes de su funcionamiento 2] (https://postimg.cc/0rp1dhKS)
+
+![Imágenes de su funcionamiento 3] (https://postimg.cc/SYpFbf3j)
+
+## Pila de tecnología:
+
+### Interfaz
+
+`HTML` `CSS` `JavaScript`
+
+## Descripción de scripts/archivos
+
+* `index.html`: 
+* `index.js`: 
+* `validator.js`: 
+* `style.css`: 
+
+
+<!-- 
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
@@ -461,4 +493,4 @@ Project Feedback:
 * [ ] El proyecto será entregado libre de _errores_ de `eslint` (_warnings_ son ok).
 * [ ] El proyecto será entregado subiendo tu código a GitHub.
 * [ ] La interfaz será "desplegada" usando GitHub Pages.
-* [ ] El README contiene una definición del producto.
+* [ ] El README contiene una definición del producto. -->
