@@ -18,6 +18,8 @@ Ambas funcionalidades se han implementado para que los usuarios puedan validar s
 
 Hay un campo en el que usuario puede ingresar solo números (de 13 a 16 dígitos) y al hacer clic en el botón **validar** le retornará gracias a la función `isValid` si la tarjeta es o no válida, y además el **número estará oculto** debido a la función `maskify`.
 
+Además, si el usuario requiere escribir un nuevo número de tarjeta, puede hacerlo luego de utilizar el botón **borrar**.
+
 #### Ejemplo:
 
 **El usuario ingresa: 4083952015263**
@@ -26,9 +28,11 @@ Hay un campo en el que usuario puede ingresar solo números (de 13 a 16 dígitos
 
 #### Imágenes de su funcionamiento:
 
-![Imágenes de su funcionamiento 1](https://i.postimg.cc/XvZ5wWQz/card-validation-ACCA-1.png)
-![Imágenes de su funcionamiento 2](https://i.postimg.cc/htZxzvbm/card-validation-ACCA-2.png)
-![Imágenes de su funcionamiento 3](https://i.postimg.cc/q793wFFM/card-validation-ACCA-3.png)
+![Imágenes de su funcionamiento 1](https://i.postimg.cc/44hYkLpR/CARD-VALIDATION-ALEXTINA-01.png)
+![Imágenes de su funcionamiento 2](https://i.postimg.cc/8cWcRcTz/CARD-VALIDATION-ALEXTINA-02.png)
+![Imágenes de su funcionamiento 3](https://i.postimg.cc/hjNhQTWY/CARD-VALIDATION-ALEXTINA-03.png)
+![Imágenes de su funcionamiento 4](https://i.postimg.cc/k42B5wZ8/CARD-VALIDATION-ALEXTINA-04.png)
+
 
 ## Pila de tecnología:
 
