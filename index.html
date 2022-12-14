@@ -6,29 +6,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  <!-- <body onload="" oncopy="return false" onpaste="return false"> -->
-    <header></header>
-    <main>
-      <div class="validationClass">
-        <form name="validate" method="post" action="index.html" autocomplete="off">
+    <div class="grid-layout">
+
+      <div class="box gl1">
         <img class="logoClass" src="logo-christine.png">
         <hr>
-        <br>
-        <h1>Antes de realizar tu compra, <br> válida los números de tu tarjeta.</h1>
-        <label for="cardNumber">Ingresa los números en el siguiente recuadro <br> y haz clic en "Validar".</label>
-        <br>
-        <input id="credictCardNumber" type="text" name="cardNumber" maxlength="16">
-        <br>
-        <button type="submit" id="validationButton">Validar</button>
-        <br>
-        <h3 id="credictCardResult"></h3>
-        </form>
-        <img class="iconClass" src="iconos.png">
       </div>
-    </main>
-    <footer>
-      <p> Está página ha sido elaborada por Alejandra Castillo <br> para el proyecto "Card Validation" miembro del cohort DEV003 de Laboratoria.</p>
-    </footer>
+
+      <div class="box gl2">
+        <form action="index.html" autocomplete="off">
+          <h1>Antes de realizar tu compra, válida los números de tu tarjeta.</h1>
+          <label for="cardNumber">Ingresa los números en el siguiente recuadro y haz clic en "Validar".</label>
+          <br>
+          <input id="credictCardNumber" type="text" name="cardNumber" maxlength="16">
+          <br>
+          <button type="submit" id="validationButton">Validar</button>
+          <br>
+          <h3 id="credictCardResult"></h3>
+          <br>
+          <img class="iconClass" src="iconos.png">
+          <br>
+          <input type="reset" class="resetClass" value="Borrar">
+        </form>
+      </div>
+
+      <div class="box gl3">
+        <p> Está página ha sido elaborada por Alejandra Castillo para el proyecto "Card Validation" miembro del cohort DEV003 de Laboratoria.</p>
+      </div>
+
+    </div>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
