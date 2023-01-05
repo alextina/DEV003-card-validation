@@ -28,7 +28,7 @@ Además, si el usuario requiere escribir un nuevo número de tarjeta, puede hace
 
 #### Imágenes de su funcionamiento:
 
-![Imágenes de su funcionamiento 1](https://i.postimg.cc/44hYkLpR/CARD-VALIDATION-ALEXTINA-01.png)
+![Imágenes de su funcionamiento 1](readme_content/imagen_de_prueba.png)
 ![Imágenes de su funcionamiento 2](https://i.postimg.cc/8cWcRcTz/CARD-VALIDATION-ALEXTINA-02.png)
 ![Imágenes de su funcionamiento 3](https://i.postimg.cc/hjNhQTWY/CARD-VALIDATION-ALEXTINA-03.png)
 ![Imágenes de su funcionamiento 4](https://i.postimg.cc/k42B5wZ8/CARD-VALIDATION-ALEXTINA-04.png)
