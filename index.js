@@ -13,6 +13,7 @@ buttonValidation.addEventListener("click", (e) => {
     const validCard = (`La tarjeta ${validator.maskify(inputNumber)} es válida.`);
     const answerHtml = document.getElementById("credictCardResult");
     answerHtml.innerHTML = validCard;
+
   } else {
     const invalidCard = (`La tarjeta ${validator.maskify(inputNumber)} es inválida.`);
     const answerHtml = document.getElementById("credictCardResult");

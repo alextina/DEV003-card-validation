@@ -1,110 +1,182 @@
-html, body{
-    background-image: url(background.png);
-    background-size: cover; 
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.grid-layout{
-    height: auto;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 500px;
-    grid-template-rows: auto auto auto;
-    padding: 25px;
-}
-.box{
-    text-align: center;
-    padding: 25px 25px;
 
+:root{
+    --firstcolor: #c20d19;
+    --secondcolor: #282828;
+    --thirdcolor: #404040;
+    --paddingsection: 20px;
+    --marginsection: 40px;
+    --paddingselement: 10px;
+    --marginelement: 25px;
+    --sizeh1: 32px;
+    --sizeh2: 20px;
+    --sizeh3: 18px;
+    --sizep: 14px;
 }
-.gl1{
-    width: auto;
-    height: auto;
-}
-.gl2{
-    width: auto;
-    height: auto;
-}
-.gl3{
-    width: auto;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    color: rgb(60, 60, 60);
-    line-height: 150%;
-}
-.logoClass{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-    padding: 25px  25px;
-}
-hr{
-    border: 1px solid rgba(116, 3, 122, 0.155);
-    width: 80%;
-    margin-top: 15px;
-}
-h1{
-    font-size:28px;
-    color:rgb(118, 73, 156);
-}
-h3{
-    font-size: 22px;
-    color:rgb(118, 73, 156);
-    font-weight: 100;
-}
-label{
-    font-size:20px;
-    color:rgb(60, 60, 60);
-    font-weight: 100;
-    line-height: 125%;
-}
-input{
+
+body{
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    font-size: 22px;
-    color:rgb(118, 73, 156);
-    margin-block: 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background-image: url(background-pattern.png);
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header{
+    padding: 0;
+    margin: 0;
+}
+
+header div{
+    background-color: var(--firstcolor);
+    text-align: right;
+    font-size: var(--sizep);
+    height: auto;
+    padding: var(--paddingselement);
+}
+
+header div a{
+    text-decoration: none;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-right: var(--marginsection);
+}
+
+header img{
+    width: 300px;
+    margin: var(--marginsection);
+}
+
+.container{
+    width: 90%;
+    max-width: 600px;
+    min-width: 430px;
+    height: auto;
+    margin: auto;
+    padding: var(--paddingsection);
+}
+
+.container div{
+    height: auto;
+    padding: var(--paddingselement);
+}
+
+.container div p{
+    font-size: var(--sizeh2);
+    line-break: 1.5;
+    color: var(--secondcolor);
+    line-height: 1.5;
+}
+
+.container div p a{
+    text-decoration: none;
+    color: var(--secondcolor);
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    font-size: var(--sizep);
+    padding: var(--paddingselement);
+    justify-content: center;
+    align-items: center;
+}
+
+#credictCardNumber{
     width: 350px;
-    padding: 5px 5px;
+    height: auto;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    border: 2px solid var(--firstcolor);
+    border-radius: 25px;
+    font-size: var(--sizep);
+    color: var(--thirdcolor);
+    text-align: center; 
+    padding: var(--paddingselement);
+    margin-bottom: var(--marginelement);
 }
-button{
-    width: 100px;
-    background-color: rgb(130, 55, 205);
-    color: rgb(255, 255, 255);
-    border-radius:8px;
-    border: 0px;
-    padding: 20px 20px;
-    margin: auto auto;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
+
+#credictCardResult{
+    width: 350px;
+    height: 44.2px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    border: 2px solid var(--secondcolor);
+    border-radius: 25px;
+    color: var(--firstcolor);
+    background-color: white;
+    padding: var(--paddingselement);
+    margin-bottom: var(--marginelement);
 }
-button:hover{
-    background-color: rgb(160, 70, 225);
-    color: rgb(255, 255, 255);
+
+#validationButton{
+    width: 150px;
+    height: auto;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: var(--secondcolor);
+    padding: var(--paddingselement);
+    margin-bottom: var(--marginelement);
 }
-.resetClass{
-    width: 100px;
-    background-color: rgba(130, 55, 205, 0.30);
-    color: rgb(255, 255, 255);
-    border-radius:8px;
-    border: 0px;
-    padding: 5px 5px;
-    margin: auto auto;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
+
+#validationButton:hover{
+    transform:scale(95%);
 }
-.resetClass:hover{
-    background-color: rgba(160, 70, 225, 0.30);
-    color: rgb(255, 255, 255);
+
+.resetButton{
+    width: 75px;
+    height: auto;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: var(--firstcolor);
+    padding: var(--paddingselement);
+    margin-bottom: var(--marginelement);
 }
-.iconClass{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    padding: 10px 10px;
+
+.resetButton:hover{
+    transform:scale(95%);
+}
+
+footer{
+    background-color: var(--secondcolor);
+    color: white;
+    height: auto;
+}
+
+footer div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: var(--sizep);
+    margin: auto;
+    width: 40%;
+    max-width: 600px;
+    min-width: 430px;
+}
+
+footer p{
+    color: white;
+    font-size: var(--sizep);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--marginelement);
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--marginelement);
+    margin-right: var(--marginelement);
+    margin-left: var(--marginelement);
 }
