@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-with, initial-scale=1.0">
-    <title>Validador de Tarjetas</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div>
-        <a target="_blank" href="https://es.wikipedia.org/wiki/Algoritmo_de_Luhn">Algortirmo de Luhn</a>
-      </div>
-      <img src="logo-valid-card.png" alt="logo-card-valid">
-    </header>
 
-    <div class="container">
-      <div>
-        <p>Valida los números de una tarjeta de crédito utilizando el <a target="_blank" href="https://es.wikipedia.org/wiki/Algoritmo_de_Luhn">Algortirmo de Luhn</a>.</p>  
-      </div>
-      
-        <form action="index.html">
-          <input type="text" id="credictCardNumber" name="cardNumber" placeholder="Número de Tarjeta" maxlength="16">
-          <button type="submit" id="validationButton">Validar</button>
-          <div id="credictCardResult">Resultado</div>
-          <input type="reset" class="resetButton" value="Borrar">
-        </form>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-with, initial-scale=1.0">
+  <title>Validador de Tarjetas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div>
+      <a target="_blank" href="https://es.wikipedia.org/wiki/Algoritmo_de_Luhn">Algoritmo de Luhn</a>
+    </div>
+    <img src="logo-valid-card.png" alt="logo-card-valid">
+  </header>
+
+  <div class="container">
+    <div>
+      <p>Valida los números de una tarjeta de crédito utilizando el <a target="_blank"
+          href="https://es.wikipedia.org/wiki/Algoritmo_de_Luhn">Algoritmo de Luhn</a>.</p>
     </div>
 
-    <footer>
-      <div>
-        <p>Esta web ha sido elaborada para el proyecto "Card Validation" de Laboratoria por Alejandra Castillo.</p>
-        <a target="_blank" href="http://github.com/alextina">GitHub</a>
-        |
-        <a target="_blank" href="https://www.linkedin.com/in/alejandracastilloavila/">LinkedIn</a>
-      </div>
-    </footer>
-    <script src="index.js" type="module"></script>
-  </body>
+    <form action="index.html">
+      <input type="text" id="credictCardNumber" name="cardNumber" placeholder="Número de Tarjeta" maxlength="16">
+      <button type="submit" id="validationButton">Validar</button>
+      <div id="credictCardResult">Resultado</div>
+      <input type="reset" class="resetButton" value="Borrar">
+    </form>
+  </div>
+
+  <footer>
+    <div>
+      <p>Esta web ha sido elaborada para el proyecto "Card Validation" de Laboratoria por Alejandra Castillo.</p>
+      <a target="_blank" href="http://github.com/alextina">GitHub</a>
+      |
+      <a target="_blank" href="https://www.linkedin.com/in/alextina/">LinkedIn</a>
+    </div>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
