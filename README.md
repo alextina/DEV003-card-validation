@@ -23,16 +23,10 @@ Además, si el usuario requiere escribir un nuevo número de tarjeta, puede hace
 #### Ejemplo:
 
 **El usuario ingresa: 4083952015263**
+[![funcionamiento 1](./readme_content/card-validation-1.png)](https://github.com/alextina/DEV003-card-validation)
 
-**Y la aplicación retornará:  #########5263**
-
-#### Imágenes de su funcionamiento:
-
-![Imágenes de su funcionamiento 1](readme_content/imagen_de_prueba.png)
-![Imágenes de su funcionamiento 2](https://i.postimg.cc/8cWcRcTz/CARD-VALIDATION-ALEXTINA-02.png)
-![Imágenes de su funcionamiento 3](https://i.postimg.cc/hjNhQTWY/CARD-VALIDATION-ALEXTINA-03.png)
-![Imágenes de su funcionamiento 4](https://i.postimg.cc/k42B5wZ8/CARD-VALIDATION-ALEXTINA-04.png)
-
+**Y la aplicación retornará:  La tarjeta #########5263 es válida.**
+[![funcionamiento 1](./readme_content/card-calidation-2.png)](https://github.com/alextina/DEV003-card-validation)
 
 ## Pila de tecnología:
 
